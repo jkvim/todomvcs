@@ -1,0 +1,29 @@
+div {
+  font-size: 22px;
+  color: #48e;
+}
+
+button {
+  display: inline-block;
+  margin: 3px;
+}
+
+.task {
+  .content {
+    display: inline-block;
+  }
+
+  .btn-remove {
+    display: none;
+  }
+
+  &:hover {
+    .btn-remove {
+      display: inline-block;
+    }
+  }
+}
+
+ul {
+  padding: 0;
+}
