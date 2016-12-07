@@ -1,6 +1,6 @@
-# vue
+# vue todo mvc
 
-> A Vue.js project
+> implement of todo by vue
 
 ## Build Setup
 
