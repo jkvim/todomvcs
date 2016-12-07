@@ -3,7 +3,12 @@
     <img src="./assets/logo.png">
     <add-todo v-on:add-todo="addTodo"></add-todo>
     <filters v-bind:visble-filter="visbleFilter" v-bind:set-filter="setFilter"></filters>
-    <list v-bind:visble-filter="visbleFilter" v-bind:todos="todos" v-bind:toggle-todo="toggleTodo"></list>
+    <list 
+      v-bind:visble-filter="visbleFilter" 
+      v-bind:todos="todos" 
+      v-bind:toggle-todo="toggleTodo"
+      v-bind:edit="editItem"
+    ></list>
   </div>
 </template>
 
@@ -44,6 +49,15 @@ export default {
     },
     setFilter(filter) {
       this.visbleFilter = filter;
+    },
+    editItem(newItem) {
+      console.log(newItem);
+      this.todos = this.todos.map((t) => {
+        if (newItem.id === t.id) {
+          return newItem;
+        }
+        return t;
+      });
     },
   },
 };
