@@ -21,6 +21,7 @@
           id: this.id,
           complete: false,
         });
+        this.message = '';
       },
     },
   };
