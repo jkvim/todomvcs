@@ -1,6 +1,11 @@
 <template>
   <ul>
-    <item v-for="todo in visbleTodo" v-bind:todo="todo" v-on:toggle-todo="toggleTodo"></item>
+    <item 
+      v-for="todo in visbleTodo" 
+      v-bind:todo="todo"
+      v-on:toggle-todo="toggleTodo"
+      v-on:edit="edit"
+    ></item>
   <ul>
 </template>
 
@@ -8,7 +13,7 @@
 import Item from './Item';
 
 export default {
-  props: ['visbleFilter', 'todos', 'toggleTodo'],
+  props: ['visbleFilter', 'todos', 'toggleTodo', 'edit'],
   components: {
     Item,
   },
@@ -32,7 +37,7 @@ export default {
 
 <style>
   ul {
-    list-style: circle;
+    list-style: none;
     width: 250px;
     margin: 0 auto;
     text-align: left
