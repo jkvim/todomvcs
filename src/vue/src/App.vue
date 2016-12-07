@@ -43,7 +43,6 @@ export default {
       });
     },
     setFilter(filter) {
-      console.log(filter);
       this.visbleFilter = filter;
     },
   },
