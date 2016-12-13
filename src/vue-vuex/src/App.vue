@@ -1,17 +1,23 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <hello></hello>
+    <add-todo></add-todo>
+    <filters></filters>
+    <todo-list></todo-list>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello';
+import AddTodo from './components/AddTodo';
+import TodoList from './components/TodoList';
+import Filters from './components/Filters';
 
 export default {
   name: 'app',
   components: {
-    Hello,
+    AddTodo,
+    TodoList,
+    Filters,
   },
 };
 </script>
