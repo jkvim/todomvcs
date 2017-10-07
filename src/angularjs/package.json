@@ -1,0 +1,19 @@
+{
+  "name": "angularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --serveStatic 'public' --files 'public'"
+  },
+  "keywords": [
+    "todomvc"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "browser-sync": "^2.18.13"
+  }
+}

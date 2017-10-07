@@ -1,0 +1,17 @@
+body {
+    background: #F6F6F6;
+}
+
+h1 {
+    color: #455A64;
+}
+
+.done {
+    text-decoration: line-through;
+    color: grey;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+}
